@@ -55,6 +55,7 @@ struct ContentView: View {
                             Image(systemName: task.isCompleted ? "checkmark.circle.fill" : "circle")
                                 .foregroundColor(task.isCompleted ? .gray : .blue)
                         }
+                        .buttonStyle(BorderlessButtonStyle())
                         
                         Text(task.text)
                             .strikethrough(task.isCompleted, color: .gray)
